@@ -1,0 +1,23 @@
+@use '../abstracts'
+
+header
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    & > *
+        flex-basis: 100%
+        display: flex
+        justify-content: center
+    & > #home > img
+        padding: 1em
+        padding-bottom: .4em
+        transform: scale(.9)
+
+    & > #location // HOME PAGE
+        background-color: abstracts.$clr-location
+        padding: 1em
+        gap: 1em
+        margin-left: -1em
+        box-shadow: inset 0 10px 6px -8px hsl(0, 0%, 70%)
+        & > span
+            font-weight: 400
