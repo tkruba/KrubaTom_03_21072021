@@ -57,12 +57,75 @@ header > #location > span {
   font-weight: 400;
 }
 
+.tutorial {
+  padding: 1em;
+  margin: 2em 0em;
+}
+.tutorial .tutorial__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 2em;
+  gap: 2em;
+  justify-content: center;
+}
+.tutorial .tutorial__list .tutorial__card {
+  width: 95%;
+  height: 4em;
+  border-radius: 20px;
+  counter-increment: list;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px 2px #d9d9d9;
+  background-color: #F6F6F6;
+  position: relative;
+}
+.tutorial .tutorial__list .tutorial__card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: #FF79DA;
+  opacity: 0;
+}
+.tutorial .tutorial__list .tutorial__card:hover::after {
+  opacity: 0.1;
+}
+.tutorial .tutorial__list .tutorial__card:hover .tutorial__icon {
+  color: #9356DC;
+}
+.tutorial .tutorial__list .tutorial__card::before {
+  content: counter(list) " ";
+  background-color: #9356DC;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  margin-left: -12px;
+}
+.tutorial .tutorial__list .tutorial__card .tutorial__icon, .tutorial .tutorial__list .tutorial__card .tutorial__text {
+  margin-left: 1em;
+}
+.tutorial .tutorial__list .tutorial__card .tutorial__icon {
+  color: #808080;
+  width: 1em;
+}
+.tutorial .tutorial__list .tutorial__card .tutorial__text {
+  font-weight: 500;
+}
+
 button {
   border: none;
   background: linear-gradient(356deg, #9356DC 0%, #FF79DA 100%);
   color: white;
   font-size: 0.9em;
-  padding: 1em;
+  padding: 1em 1.4em;
   border-radius: 60px;
   margin-top: 2em;
   box-shadow: 0 4px 6px 0px #b3b3b3;
