@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À la française - Ohmyfood</title>
 
+    <link rel="stylesheet" href="../CSS/style.css">
     <!-- CDN FontAwesome -->
     <script src="https://kit.fontawesome.com/289f71a5e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-            <a class="fas fa-arrow-left" href="../index.html" id="back"></a>
-            <a href="../index.html" id="home">
-                <img src="../Images/Logo/ohmyfood@2x.svg" alt="Ohmyfood">
+    <header class="header">
+            <a class="header__back-button fas fa-arrow-left" href="../index.html" id="back"></a>
+            <a class="header__home-button" href="../index.html" id="home">
+                <img class="header__home-image" src="../Images/Logo/ohmyfood@2x.svg" alt="Ohmyfood">
             </a>
     </header>
 
-    <article>
+    <main>
         <h1>À la française</h1>
         <i class="far fa-heart"></i>
 
@@ -132,21 +133,21 @@
         </div>
 
         <button id="order">Commander</button>
-    </article>
+    </main>
 
     <footer>
         <nav>
-            <img src="../Images/Logo/ohmyfood@2x.svg" alt="Ohmyfood">
+            <p>ohmyfood</p>
             <ul>
                 <li>
                     <a href="#">
-                        <i class="fas fa-utensils"></i>
+                        <i class="fas fa-utensils fa-xs"></i>
                         <span>Proposer un restaurant</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-hands-helping"></i>
+                        <i class="fas fa-hands-helping fa-xs"></i>
                         <span>Devenir partenaire</span>
                     </a>
                 </li>

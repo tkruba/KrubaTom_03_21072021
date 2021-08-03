@@ -1,4 +1,16 @@
+@use '../abstracts'
+
 *
     margin: 0
     text-decoration: none
     font-family: 'Roboto'
+
+main
+    padding: 1em
+    padding-top: 2em
+    background-color: abstracts.$clr-background
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    & *:not(button)
+        flex-basis: 100%
