@@ -3,6 +3,7 @@
 .tutorial
     padding: 1em
     margin: 2em 0em
+
     .tutorial__list
         display: flex
         flex-wrap: wrap
@@ -10,6 +11,7 @@
         margin-top: 2em
         gap: 2em
         justify-content: center
+
         & .tutorial__card
             flex-basis: 95%
             height: 4em
@@ -20,6 +22,7 @@
             box-shadow: 0 4px 6px 2px hsla(0, 0%, 85%, .6)
             background-color: abstracts.$clr-background
             position: relative
+
             &::after
                 content: ''
                 position: absolute
@@ -30,10 +33,14 @@
                 border-radius: 20px
                 background-color: abstracts.$clr-secondary
                 opacity: 0
+                transition: opacity .5s ease-in-out
+
             &:hover::after
                 opacity: 0.1
+
             &:hover .tutorial__icon
                 color: abstracts.$clr-primary
+
             &::before
                 content: counter(list) ' '
                 background-color: abstracts.$clr-primary
@@ -45,11 +52,15 @@
                 align-items: center
                 color: abstracts.$clr-white
                 margin-left: -12px
+
             & .tutorial__icon, .tutorial__text
                 margin-left: 1em
+
             & .tutorial__icon
                 color: abstracts.$clr-gray
                 width: 1em
+                transition: color .5s ease-in-out   
+
             & .tutorial__text
                 font-weight: 500
 
@@ -57,6 +68,7 @@
     position: relative
     display: block
     overflow: hidden
+
     & .card__new
         position: absolute
         background-color: abstracts.$clr-tertiary
@@ -66,28 +78,57 @@
         font-size: .8em
         border-radius: 2px
         color: abstracts.$clr-text-tertiary
+
     & > .card__picture
         object-fit: cover
         width: 100%
         height: 50vw
+
     & .card__body
         margin-top: .2em
         padding-left: .6em
         position: relative
         line-height: 1.4em
+
         & > .card__title
             font-weight: 600
             margin: 0
+            overflow: hidden
+            text-overflow: ellipsis
+
         & > .card__description
             font-size: .9em
             font-weight: 300
             margin: 0
             margin-bottom: .6em
+            overflow: hidden
+            text-overflow: ellipsis
 
         & > .card__like
             position: absolute
             right: 1em
             top: .6em
 
-        & > .card__price
-            align-self: flex-end
+    & .card__price
+        align-self: end
+        margin-bottom: .7em
+        margin-right: 1em
+        font-weight: 500
+
+    & .card__check
+        margin-right: -5em
+        width: 5em
+        align-items: center
+        display: flex
+        justify-content: center
+        background-color: abstracts.$clr-tertiary
+        transition: margin-right .5s ease-in-out
+
+        & > i
+            color: abstracts.$clr-white
+
+    &:hover .card__check
+        margin-right: 0
+
+        & > i
+            animation: .5s ease-in-out checkRotate .1s

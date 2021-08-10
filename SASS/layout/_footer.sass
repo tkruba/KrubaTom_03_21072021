@@ -3,16 +3,31 @@
 footer
     background-color: abstracts.$clr-footer
     padding: 1em
+
     & *
         color: abstracts.$clr-white
+
     & p
         font-family: 'Shrikhand'
+
     &  ul
         list-style: none
         font-weight: 400
         padding: 0
         margin-top: 1em
         line-height: 2em
+        & a
+            transition: color .2s ease-in-out
+
+            &:hover
+                color: abstracts.$clr-primary
+            & *
+
+                transition: color .2s ease-in-out
+            &:hover *
+
+                color: abstracts.$clr-primary
+
         & i
             font-size: 0.8em
             width: 1.2em

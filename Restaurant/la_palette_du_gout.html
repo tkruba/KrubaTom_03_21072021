@@ -7,157 +7,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La palette du goût - Ohmyfood</title>
 
+    <link rel="stylesheet" href="../CSS/style.css">
     <!-- CDN FontAwesome -->
     <script src="https://kit.fontawesome.com/289f71a5e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a class="fas fa-arrow-left" href="../index.html" id="back"></a>
-            <a href="../index.html" id="home">
-                <img src="../Images/Logo/ohmyfood@2x.svg" alt="Ohmyfood">
-            </a>
-        </nav>
+    <header class="header">
+        <a class="header__back-button fas fa-arrow-left" href="../index.html" id="back"></a>
+        <a class="header__home-button" href="../index.html" id="home">
+            <img class="header__home-image" src="../Images/Logo/ohmyfood@2x.svg" alt="Ohmyfood">
+        </a>
+        <img class="header__restaurant-image" src="../Images/Restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="La palette du goût">
     </header>
 
-    <article>
-        <h1>La palette du goût</h1>
-        <i class="far fa-heart"></i>
+    <main class="restaurant">
+        <h1 class="restaurant__title">La palette du goût</h1>
+        <i class="restaurant__like far fa-heart fa-lg"></i>
 
-        <div id="starter">
-            <h2>ENTRÉES</h2>
+        <div class="restaurant__category" id="starter">
+            <h2 class="restaurant__subtitle">ENTRÉES</h2>
             <ul>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Fricassée d'escargot</p>
-                            <p class="card__body__description">Au piment d'Espelette</p>
-                            <span class="card__body__price">25€</span>
+                            <p class="card__title">Fricassée d'escargot</p>
+                            <p class="card__description">Au piment d'Espelette</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">25€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Foie gras de canard mi-cuit</p>
-                            <p class="card__body__description">Et ses copeaux de truffe noire</p>
-                            <span class="card__body__price">35€</span>
+                            <p class="card__title">Foie gras de canard mi-cuit</p>
+                            <p class="card__description">Et ses copeaux de truffe noire</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">35€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Oeuf au plat</p>
-                            <p class="card__body__description">Assaisonné à la truffe sur lit de caviar</p>
-                            <span class="card__body__price">20€</span>
+                            <p class="card__title">Oeuf au plat</p>
+                            <p class="card__description">Assaisonné à la truffe sur lit de caviar</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">20€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
             </ul>
         </div>
 
-        <div class="main-dish">
-            <h2>PLATS</h2>
+        <div class="restaurant__category" id="main-dish">
+            <h2 class="restaurant__subtitle">PLATS</h2>
             <ul>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Filet de boeuf aux herbes</p>
-                            <p class="card__body__description">Accompagné de sa ribambelle de légumes</p>
-                            <span class="card__body__price">40€</span>
+                            <p class="card__title">Filet de boeuf aux herbes</p>
+                            <p class="card__description">Accompagné de sa ribambelle de légumes</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">40€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Parmentier de queue de boeuf</p>
-                            <p class="card__body__description">À la truffe noire sur sa purée de panais</p>
-                            <span class="card__body__price">35€</span>
+                            <p class="card__title">Parmentier de queue de boeuf</p>
+                            <p class="card__description">À la truffe noire sur sa purée de panais</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">35€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Filet de turbot</p>
-                            <p class="card__body__description">Aux agrumes</p>
-                            <span class="card__body__price">44€</span>
+                            <p class="card__title">Filet de turbot</p>
+                            <p class="card__description">Aux agrumes</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">44€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
             </ul>
         </div>
 
-        <div class="dessert">
-            <h2>DESSERTS</h2>
+        <div class="restaurant__category" id="dessert">
+            <h2 class="restaurant__subtitle">DESSERTS</h2>
             <ul>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Paris-Brest</p>
-                            <p class="card__body__description">Revisité</p>
-                            <span class="card__body__price">18€</span>
+                            <p class="card__title">Paris-Brest</p>
+                            <p class="card__description">Revisité</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">18€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Macaron au chocolat d'exception</p>
-                            <p class="card__body__description">Et glace à la vanille de Madagascar</p>
-                            <span class="card__body__price">22€</span>
+                            <p class="card__title">Macaron au chocolat d'exception</p>
+                            <p class="card__description">Et glace à la vanille de Madagascar</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">22€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="card">
                         <div class="card__body">
-                            <p class="card__body__title">Mousse au chocolat</p>
-                            <p class="card__body__description">Au piment d'Espelette et à la truffe noire</p>
-                            <span class="card__body__price">23€</span>
+                            <p class="card__title">Mousse au chocolat</p>
+                            <p class="card__description">Au piment d'Espelette et à la truffe noire</p>
                         </div>
-                        <div class="card__check"><i class="fas fa-check-circle"></i></div>
+                        <span class="card__price">23€</span>
+                        <div class="card__check"><i class="fas fa-check-circle fa-lg"></i></div>
                     </a>
                 </li>
             </ul>
         </div>
 
         <button id="order">Commander</button>
-    </article>
+    </main>
 
     <footer>
-        <img src="../Images/Logo/ohmyfood@2x.svg" alt="Ohmyfood">
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fas fa-utensils"></i>
-                    <span>Proposer un restaurant</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-hands-helping"></i>
-                    <span>Devenir partenaire</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">Mentions légales</a>
-            </li>
-            <li>
-                <a href="mailto:contact@ohmyfood.com">Contact</a>
-            </li>
-        </ul>
+        <nav>
+            <p>ohmyfood</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils fa-xs"></i>
+                        <span>Proposer un restaurant</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hands-helping fa-xs"></i>
+                        <span>Devenir partenaire</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@ohmyfood.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </footer>
 </body>
 
