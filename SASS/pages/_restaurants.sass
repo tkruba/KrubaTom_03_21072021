@@ -1,0 +1,66 @@
+@use '../abstracts'
+
+.restaurant
+    border-radius: 35px 35px 0 0
+    // background-color: red
+
+    & > button
+        margin-top: 3em
+        margin-bottom: 2em
+        padding: 1em 3em
+    & .restaurant__title
+        font-family: 'Shrikhand'
+        font-size: 1.6em
+
+    & .restaurant__like
+        position: absolute
+        top: 2em
+        right: 1em
+
+    & .restaurant__category
+        & .restaurant__subtitle
+            font-size: 1.2em
+            font-weight: 300
+            background-image: linear-gradient(abstracts.$clr-tertiary, abstracts.$clr-tertiary)
+            background-size: 2.6em 4px
+            background-repeat: no-repeat
+            background-position: left bottom
+            padding-bottom: .4em
+        & > ul
+            display: flex
+            flex-wrap: wrap
+        & li
+            flex-basis: 100%
+            display: block
+            & .card
+                display: flex
+                overflow: hidden
+                max-height: 5em
+                height: 100%
+                position: relative
+                & .card__body
+                    padding-top: .2em
+                    flex-basis: 100%
+                    max-width: 100%
+                    white-space: nowrap
+                    flex: 1
+                    min-width: 0
+                    & .card__title
+                        overflow: hidden
+                        text-overflow: ellipsis
+                    & .card__description
+                        overflow: hidden
+                        text-overflow: ellipsis
+                & .card__price
+                    align-self: end
+                    margin-bottom: .7em
+                    margin-right: 1em
+                    font-weight: 500
+                & .card__check
+                    margin-right: -5em
+                    width: 5em
+                    align-items: center
+                    display: flex
+                    justify-content: center
+                    background-color: abstracts.$clr-tertiary
+

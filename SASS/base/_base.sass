@@ -1,16 +1,27 @@
 @use '../abstracts'
 
 *
-    margin: 0
     text-decoration: none
     font-family: 'Roboto'
+    color: abstracts.$clr-black
+
+body
+    margin: 0
 
 main
     padding: 1em
-    padding-top: 2em
+    padding-bottom: 3em
     background-color: abstracts.$clr-background
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    & *:not(button)
-        flex-basis: 100%
+    // background-color: red
+    position: relative
+    & ul
+        list-style: none
+        display: flex
+        flex-wrap: wrap
+        gap: 1em
+        padding: 0
+        & li
+            flex-basis: 100%
+            box-shadow: 0 0 8px 4px hsla(0, 0%, 85%, .8)
+            border-radius: 15px
+            overflow: hidden
