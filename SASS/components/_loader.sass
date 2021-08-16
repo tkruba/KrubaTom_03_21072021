@@ -1,0 +1,23 @@
+@use '../abstracts'
+
+.loader
+    position: fixed
+    width: 0%
+    height: 0%
+    z-index: 1
+    background-color: white
+    display: flex
+    align-items: center
+    justify-content: center
+    animation: loaderGlobal 4s forwards, loaderDisappears 2s forwards 2s
+
+    & .loader__text
+        font-family: 'Shrikhand'
+        font-size: 3em
+        padding: .2em
+        background-image: linear-gradient(0, abstracts.$clr-primary 0%, abstracts.$clr-secondary 100%)
+        // background-clip: text
+        -webkit-background-clip: text
+        color: transparent
+        animation: loaderAppears 1s forwards .2s
+        clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)
