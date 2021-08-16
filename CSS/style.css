@@ -39,6 +39,16 @@ main ul li {
     transform: rotate(360deg);
   }
 }
+@keyframes cardAppears {
+  from {
+    transform: translateY(1em);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 footer {
   background-color: #353535;
   padding: 1em;
@@ -225,7 +235,7 @@ footer ul i {
   top: 0.6em;
 }
 .card .card__price {
-  align-self: end;
+  align-self: flex-end;
   margin-bottom: 0.7em;
   margin-right: 1em;
   font-weight: 500;
@@ -343,6 +353,114 @@ button:hover::after {
   top: 1.8em;
   right: 1em;
 }
+.restaurant #starter ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+.restaurant #starter ul li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.restaurant #starter ul li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.restaurant #starter ul li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.restaurant #starter ul li:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.restaurant #starter ul li:nth-child(6) {
+  animation-delay: 1s;
+}
+.restaurant #starter ul li:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.restaurant #starter ul li:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.restaurant #starter ul li:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.restaurant #starter ul li:nth-child(10) {
+  animation-delay: 1.8s;
+}
+.restaurant #starter ul li:nth-child(11) {
+  animation-delay: 2s;
+}
+.restaurant #starter ul li:nth-child(12) {
+  animation-delay: 2.2s;
+}
+.restaurant #main-dish ul li:nth-child(1) {
+  animation-delay: 1s;
+}
+.restaurant #main-dish ul li:nth-child(2) {
+  animation-delay: 1.2s;
+}
+.restaurant #main-dish ul li:nth-child(3) {
+  animation-delay: 1.4s;
+}
+.restaurant #main-dish ul li:nth-child(4) {
+  animation-delay: 1.6s;
+}
+.restaurant #main-dish ul li:nth-child(5) {
+  animation-delay: 1.8s;
+}
+.restaurant #main-dish ul li:nth-child(6) {
+  animation-delay: 2s;
+}
+.restaurant #main-dish ul li:nth-child(7) {
+  animation-delay: 2.2s;
+}
+.restaurant #main-dish ul li:nth-child(8) {
+  animation-delay: 2.4s;
+}
+.restaurant #main-dish ul li:nth-child(9) {
+  animation-delay: 2.6s;
+}
+.restaurant #main-dish ul li:nth-child(10) {
+  animation-delay: 2.8s;
+}
+.restaurant #main-dish ul li:nth-child(11) {
+  animation-delay: 3s;
+}
+.restaurant #main-dish ul li:nth-child(12) {
+  animation-delay: 3.2s;
+}
+.restaurant #dessert ul li:nth-child(1) {
+  animation-delay: 1.8s;
+}
+.restaurant #dessert ul li:nth-child(2) {
+  animation-delay: 2s;
+}
+.restaurant #dessert ul li:nth-child(3) {
+  animation-delay: 2.2s;
+}
+.restaurant #dessert ul li:nth-child(4) {
+  animation-delay: 2.4s;
+}
+.restaurant #dessert ul li:nth-child(5) {
+  animation-delay: 2.6s;
+}
+.restaurant #dessert ul li:nth-child(6) {
+  animation-delay: 2.8s;
+}
+.restaurant #dessert ul li:nth-child(7) {
+  animation-delay: 3s;
+}
+.restaurant #dessert ul li:nth-child(8) {
+  animation-delay: 3.2s;
+}
+.restaurant #dessert ul li:nth-child(9) {
+  animation-delay: 3.4s;
+}
+.restaurant #dessert ul li:nth-child(10) {
+  animation-delay: 3.6s;
+}
+.restaurant #dessert ul li:nth-child(11) {
+  animation-delay: 3.8s;
+}
+.restaurant #dessert ul li:nth-child(12) {
+  animation-delay: 4s;
+}
 .restaurant .restaurant__category:first-of-type {
   margin-top: 2em;
 }
@@ -365,6 +483,8 @@ button:hover::after {
 .restaurant .restaurant__category li {
   flex-basis: 100%;
   display: block;
+  animation: cardAppears 2s forwards;
+  opacity: 0;
 }
 .restaurant .restaurant__category li .card {
   display: flex;

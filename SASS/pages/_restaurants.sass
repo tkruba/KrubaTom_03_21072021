@@ -19,11 +19,27 @@
         top: 1.8em
         right: 1em
 
+    & #starter ul li
+        @for $i from 1 through 12
+            &:nth-child(#{$i})
+                animation-delay: (($i - 1) * 0.2s)
+
+    
+    & #main-dish ul li
+        @for $i from 1 through 12
+            &:nth-child(#{$i})
+                animation-delay: (($i + 4) * 0.2s)
+                
+    & #dessert ul li
+        @for $i from 1 through 12
+            &:nth-child(#{$i})
+                animation-delay: (($i + 8) * 0.2s)
+
     & .restaurant__category
 
         &:first-of-type
             margin-top: 2em
-            
+
         &:not(:first-of-type)
             margin-top: 3em
 
@@ -43,6 +59,8 @@
         & li
             flex-basis: 100%
             display: block
+            animation: cardAppears 2s forwards
+            opacity: 0
 
             & .card
                 display: flex
@@ -58,4 +76,3 @@
                     white-space: nowrap
                     flex: 1
                     min-width: 0
-
