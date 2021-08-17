@@ -24,12 +24,11 @@
             &:nth-child(#{$i})
                 animation-delay: (($i - 1) * 0.2s)
 
-    
     & #main-dish ul li
         @for $i from 1 through 12
             &:nth-child(#{$i})
                 animation-delay: (($i + 4) * 0.2s)
-                
+
     & #dessert ul li
         @for $i from 1 through 12
             &:nth-child(#{$i})
@@ -61,6 +60,9 @@
             display: block
             animation: cardAppears 2s forwards
             opacity: 0
+
+            +abstracts.tablet
+                flex-basis: 48%
 
             & .card
                 display: flex

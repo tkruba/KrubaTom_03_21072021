@@ -10,12 +10,24 @@ footer
     & p
         font-family: 'Shrikhand'
 
-    &  ul
+    & ul
         list-style: none
         font-weight: 400
         padding: 0
         margin-top: 1em
         line-height: 2em
+        display: flex
+        flex-wrap: wrap
+
+        +abstracts.tablet
+            gap: 1em
+
+        & li
+            flex-basis: 100%
+            
+            +abstracts.tablet
+                flex-basis: calc(50% - 1em)
+
         & a
             transition: color .2s ease-in-out
 
