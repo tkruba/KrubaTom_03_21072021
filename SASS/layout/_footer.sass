@@ -10,6 +10,9 @@ footer
     & p
         font-family: 'Shrikhand'
 
+        +abstracts.desktop
+            margin-left: 5em
+
     & ul
         list-style: none
         font-weight: 400
@@ -27,6 +30,10 @@ footer
             
             +abstracts.tablet
                 flex-basis: calc(50% - 1em)
+
+            +abstracts.desktop
+                flex-basis: calc(25% - 1em)
+                text-align: center
 
         & a
             transition: color .2s ease-in-out

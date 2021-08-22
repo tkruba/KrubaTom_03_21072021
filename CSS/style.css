@@ -36,6 +36,11 @@ main ul li {
     flex-basis: calc(50% - 1em);
   }
 }
+@media screen and (min-width: 1440px) {
+  main ul li {
+    flex-basis: calc(25% - 1em);
+  }
+}
 
 @keyframes checkRotate {
   0% {
@@ -98,6 +103,11 @@ footer * {
 footer p {
   font-family: "Shrikhand";
 }
+@media screen and (min-width: 1440px) {
+  footer p {
+    margin-left: 5em;
+  }
+}
 footer ul {
   list-style: none;
   font-weight: 400;
@@ -118,6 +128,12 @@ footer ul li {
 @media screen and (min-width: 768px) {
   footer ul li {
     flex-basis: calc(50% - 1em);
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer ul li {
+    flex-basis: calc(25% - 1em);
+    text-align: center;
   }
 }
 footer ul a {
@@ -165,7 +181,7 @@ footer ul i {
 .header .header__back-button {
   position: absolute;
   left: 1em;
-  top: 1.2em;
+  top: 1em;
   font-size: 1.2em;
   transition: color 0.2s ease-in-out;
 }
@@ -176,6 +192,11 @@ footer ul i {
   max-width: 100%;
   object-fit: cover;
   max-height: 14em;
+}
+@media screen and (min-width: 1440px) {
+  .header .header__restaurant-image {
+    max-height: 22em;
+  }
 }
 
 .tutorial {
@@ -204,6 +225,11 @@ footer ul i {
 @media screen and (min-width: 768px) {
   .tutorial .tutorial__list .tutorial__card {
     flex-basis: 45%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tutorial .tutorial__list .tutorial__card {
+    flex-basis: 30%;
   }
 }
 .tutorial .tutorial__list .tutorial__card::after {
@@ -271,6 +297,11 @@ footer ul i {
 @media screen and (min-width: 768px) {
   .card > .card__picture {
     height: 25vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card > .card__picture {
+    height: 15vw;
   }
 }
 .card .card__body {
@@ -424,6 +455,14 @@ button:hover::after {
   border-radius: 35px 35px 0 0;
   margin-top: -2em;
 }
+@media screen and (min-width: 1440px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4em;
+    padding-top: 1em;
+  }
+}
 .restaurant > button {
   margin-top: 3em;
   margin-bottom: 2em;
@@ -433,10 +472,20 @@ button:hover::after {
   font-family: "Shrikhand";
   font-size: 1.6em;
 }
+@media screen and (min-width: 1440px) {
+  .restaurant .restaurant__title {
+    flex-basis: 100%;
+  }
+}
 .restaurant .restaurant__like {
   position: absolute;
   top: 1.8em;
   right: 1em;
+}
+@media screen and (min-width: 1440px) {
+  .restaurant .restaurant__like {
+    right: 6em;
+  }
 }
 .restaurant #starter ul li:nth-child(1) {
   animation-delay: 0s;
@@ -546,11 +595,26 @@ button:hover::after {
 .restaurant #dessert ul li:nth-child(12) {
   animation-delay: 4s;
 }
+@media screen and (min-width: 1440px) {
+  .restaurant .restaurant__category {
+    flex-basis: 32%;
+  }
+}
 .restaurant .restaurant__category:first-of-type {
   margin-top: 2em;
 }
+@media screen and (min-width: 1440px) {
+  .restaurant .restaurant__category:first-of-type {
+    margin-top: 0;
+  }
+}
 .restaurant .restaurant__category:not(:first-of-type) {
   margin-top: 3em;
+}
+@media screen and (min-width: 1440px) {
+  .restaurant .restaurant__category:not(:first-of-type) {
+    margin-top: 0;
+  }
 }
 .restaurant .restaurant__category .restaurant__subtitle {
   font-size: 1.2em;
@@ -565,6 +629,12 @@ button:hover::after {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (min-width: 1440px) {
+  .restaurant .restaurant__category > ul {
+    flex-direction: column;
+    width: 94%;
+  }
+}
 .restaurant .restaurant__category li {
   flex-basis: 100%;
   display: block;
@@ -574,6 +644,11 @@ button:hover::after {
 @media screen and (min-width: 768px) {
   .restaurant .restaurant__category li {
     flex-basis: 48%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurant .restaurant__category li:first-of-type {
+    margin-top: 1em;
   }
 }
 .restaurant .restaurant__category li .card {
