@@ -12,6 +12,7 @@ button
     margin-top: 2em
     box-shadow: 0 4px 6px 0px hsl(0, 0%, 70%)
     position: relative
+    cursor: pointer
 
     &::after
         position: absolute
@@ -25,9 +26,11 @@ button
         box-shadow: 0 4px 12px 2px hsl(0, 0%, 70%)
         opacity: 0
         transition: opacity .5s ease-in-out
+        cursor: pointer
 
     &:hover::after
         opacity: 1
+        cursor: pointer
 
 .card__like, .restaurant__like
     position: relative
@@ -37,6 +40,7 @@ button
     display: flex !important
     align-items: center
     justify-content: center
+    cursor: pointer
 
     &::after
         display: flex
@@ -53,6 +57,7 @@ button
         color: transparent
         opacity: 0
         transition: opacity .5s ease-in-out
+        cursor: pointer
 
     &:hover
         color: transparent
