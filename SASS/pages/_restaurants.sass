@@ -10,6 +10,7 @@
         flex-wrap: wrap
         padding: 4em
         padding-top: 1em
+        gap: 2em
 
     & > button
         margin-top: 3em
@@ -21,7 +22,7 @@
         font-size: 1.6em
 
         +abstracts.desktop
-            flex-basis: 100%
+            flex-basis: calc(100% - 2em)
 
     & .restaurant__like
         position: absolute
@@ -49,7 +50,7 @@
     & .restaurant__category
 
         +abstracts.desktop
-            flex-basis: 32%
+            flex-basis: calc(33% - 2em)
 
         &:first-of-type
             margin-top: 2em
@@ -78,7 +79,6 @@
 
             +abstracts.desktop
                 flex-direction: column
-                width: 94%
 
         & li
             flex-basis: 100%

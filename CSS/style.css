@@ -392,7 +392,7 @@ button:hover::after {
   transition: color 0.5s ease-in-out;
   height: 1em;
   width: 1em;
-  display: flex !important;
+  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -402,7 +402,10 @@ button:hover::after {
   align-items: center;
   justify-content: center;
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "";
@@ -425,7 +428,7 @@ button:hover::after {
   width: 0%;
   height: 0%;
   z-index: 1;
-  background-color: white;
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -466,6 +469,7 @@ button:hover::after {
     flex-wrap: wrap;
     padding: 4em;
     padding-top: 1em;
+    gap: 2em;
   }
 }
 .restaurant > button {
@@ -479,7 +483,7 @@ button:hover::after {
 }
 @media screen and (min-width: 1440px) {
   .restaurant .restaurant__title {
-    flex-basis: 100%;
+    flex-basis: calc(100% - 2em);
   }
 }
 .restaurant .restaurant__like {
@@ -602,7 +606,7 @@ button:hover::after {
 }
 @media screen and (min-width: 1440px) {
   .restaurant .restaurant__category {
-    flex-basis: 32%;
+    flex-basis: calc(33% - 2em);
   }
 }
 .restaurant .restaurant__category:first-of-type {
@@ -637,7 +641,6 @@ button:hover::after {
 @media screen and (min-width: 1440px) {
   .restaurant .restaurant__category > ul {
     flex-direction: column;
-    width: 94%;
   }
 }
 .restaurant .restaurant__category li {

@@ -37,7 +37,7 @@ button
     transition: color .5s ease-in-out
     height: 1em
     width: 1em
-    display: flex !important
+    display: flex
     align-items: center
     justify-content: center
     cursor: pointer
@@ -47,12 +47,14 @@ button
         align-items: center
         justify-content: center
         position: absolute
-        inset: 0
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
         font-family: "Font Awesome 5 Free"
         font-weight: 900
         content: "\f004"
         background-image: linear-gradient(245deg, abstracts.$clr-primary 0%, abstracts.$clr-secondary 100%)
-        // background-clip: text
         -webkit-background-clip: text
         color: transparent
         opacity: 0
